@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Students | Ridgeview School</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+    * { 
+        margin:0; 
+        padding:0; 
+        box-sizing:border-box; 
+        font-family:Poppins; 
+    }
+        
+    body { 
+        background:#f4f4f4; 
+        color:#333; 
+    }
+        
+    header { 
+        background:white; 
+        padding:15px 5%; 
+        display:flex; 
+        align-items:center; 
+        justify-content:space-between; 
+        border-bottom:1px solid #ddd; 
+    }
+        
+    .logo { 
+        font-size:22px; 
+        font-weight:700; 
+    }
+        
+    nav a { 
+        margin:0 12px; 
+        text-decoration:none; 
+        color:#333; 
+        font-weight:500; 
+    }
+        
+    nav a:hover { 
+        color:#5c5ce0; 
+    }
+
+    
+    .about-intro {
+        padding: 80px 10% 40px;
+        text-align: center;
+        background: white;
+    }
+        
+    .about-intro h1 { 
+        font-size: 48px; 
+        font-weight: 700; 
+        margin-bottom: 20px; 
+    }
+        
+    .about-intro p { 
+        max-width: 800px; 
+        margin: auto; color: #666; 
+        line-height: 1.6; 
+    }
+
+   .grid-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background: white;
+        overflow: hidden;
+        max-width: 1100px; 
+        margin: 0 auto;
+    }
+    
+    .grid-img-container { 
+        width: 100%; 
+        height: 500px; 
+    } 
+        
+    .grid-img-container img { 
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover; 
+    }
+        
+    .message-box {
+        background: #1e2147; 
+        color: white;
+        padding: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .message-box h2 {
+        color: #6c6cff; 
+        font-size: 24px; 
+        margin-bottom: 15px; 
+    }
+        
+    .message-box p { 
+        line-height: 1.8; 
+        font-weight: 300; 
+        font-size: 14px;
+        opacity: 0.9; 
+    }
+    
+    footer { 
+        background:#1e2147; 
+        color:white; 
+        padding:60px 10%; 
+    }
+        
+    .footer-grid { 
+        display:grid; 
+        grid-template-columns:2fr 1fr 1fr 1fr; 
+        gap:40px; 
+    }
+        
+    footer a { 
+        color:#bbb; 
+        display:block; 
+        margin:8px 0; 
+        text-decoration:none; 
+    }
+        
+    .copy { 
+        text-align:center; 
+        margin-top:40px; 
+        font-size:13px; 
+        color:#aaa; 
+    }
+
+    @media(max-width:900px){
+        .grid-section { 
+            grid-template-columns: 1fr; 
+            width: 90%; 
+        }
+            
+        .message-box { 
+            padding: 40px; 
+        }
+        
+        .grid-img-container { 
+            height: 350px; 
+        }
+        
+        .reverse-mobile { 
+            order: 2; 
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Ridgeview Middle School</div>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="academics.html">Academics</a>
+        <a href="news.html">News</a>
+        <a href="events.html">Events</a>
+        <a href="students.html">Students</a>
+        <a href="parents.html">Parents</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="about-intro">
+    <h1>OUR STUDENTS</h1>
+    <p>Our students are at the heart of everything we do. They bring curiosity, creativity, and enthusiasm into the classroom every day. We encourage them to explore their talents, develop confidence, and strive for excellence both academically and personally. We are proud to support their journey as they grow, achieve, and prepare for a successful future.</p>
+</section>
+
+<section class="grid-section">
+    <div class="grid-img-container">
+        <img src="https://cdn.prod.website-files.com/5ef610640ee6547fd932fe49/6399c70967b098c68539aca7_How%20Dance%20and%20Musical%20Theatre%20Will%20Help%20You%20In%20Your%20Career%20(1).jpg">
+    </div>
+    <div class="message-box">
+        <h2>Clubs & Activities</h2>
+        <p>
+            Students explore their interests and talents through a variety of engaging clubs and activities. These experiences build creativity, teamwork, and leadership skills.
+            <br><br>
+            Opportunities to explore their interests, develop new skills, and build meaningful friendships beyond the classroom. From academic clubs to creative and cultural activities, students are encouraged to participate, collaborate, and discover their passions.
+        </p>
+    </div>
+</section>
+
+<section class="grid-section">
+    <div class="message-box reverse-mobile">
+        <h2>After School</h2>
+        <p>
+            Our after-school programs provide a safe space for students to learn, create, and stay active. They help students develop new skills while enjoying meaningful experiences beyond the classroom.
+            <br><br>
+            Through a variety of activities such as academic support, sports, arts, and creative workshops, students can strengthen their skills, explore new interests, and stay active.
+        </p>
+    </div>
+    <div class="grid-img-container">
+        <img src="https://images.unsplash.com/photo-1549057736-889b732754a2?q=80&w=1044&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    </div>
+</section>
+
+<footer>
+<div class="footer-grid">
+<div>
+<h3>Ridgeview</h3>
+<p>Middle School</p>
+</div>
+<div>
+<h4>Quick Navigation</h4>
+<a href="about.html">About</a>
+<a href="academics.html">Academics</a>
+<a href="students.html">Students</a>
+<a href="parents.html">Parents</a>
+</div>
+<div>
+<h4>Stay Connected</h4>
+<a href="https://www.facebook.com/ridgeviewschool" target="_blank">Facebook</a>
+<a href="https://www.instagram.com/ridgeviewschool" target="_blank">Instagram</a>
+<a href="https://twitter.com/ridgeviewschool" target="_blank">Twitter</a>
+<a href="https://www.youtube.com/@ridgeviewschool" target="_blank">YouTube</a>
+</div>
+<div>
+<h4>Get in Touch</h4>
+<p>500 Terry Francine Street</p>
+<p>San Francisco, CA</p>
+<p>Tel: 123-456-7890</p>
+</div>
+</div>
+<div class="copy">
+© 2030 Ridgeview Middle School | Copyrights reserved
+</div>
+</footer>
+</body>
+</html>

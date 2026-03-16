@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admissions | Ridgeview School</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+* { 
+    margin:0; 
+    padding:0; 
+    box-sizing:border-box; 
+    font-family:Poppins; 
+}
+
+body { 
+    background:#f4f4f4; 
+    color:#333; 
+}
+        
+header { 
+    background:white; 
+    padding:15px 5%; 
+    display:flex; 
+    align-items:center; 
+    justify-content:space-between; 
+    border-bottom:1px solid #ddd; 
+}
+
+.logo { 
+    font-size:22px; 
+    font-weight:700; 
+}
+    
+nav a { 
+    margin:0 12px; 
+    text-decoration:none; 
+    color:#333; 
+    font-weight:500; 
+}
+
+.admissions-intro {
+    padding: 80px 10% 40px;
+    text-align: center;
+    background: white;
+}
+
+.admissions-intro h1 { 
+    font-size: 48px; 
+    font-weight: 700; 
+    margin-bottom: 20px; 
+    letter-spacing: 2px; 
+    color: #1e2147; 
+}
+        
+.admissions-intro p { 
+    max-width: 600px; 
+    margin: auto; 
+    color: #999; 
+    line-height: 1.6; 
+    font-size: 14px; 
+}
+
+.admissions-container {
+    max-width: 1100px;
+    margin: 0 auto 80px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: white;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.info-white {
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-white h2 { 
+    font-size: 28px; 
+    margin-bottom: 20px; 
+    color: #333; 
+}
+        
+.info-white p { 
+    font-size: 14px; 
+    line-height: 1.8; 
+    color: #666; 
+    margin-bottom: 20px; 
+}
+
+.info-dark {
+    background: #1e2147;
+    color: white;
+    padding: 80px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-dark h2 { 
+    color: #6c6cff; 
+    font-size: 28px; 
+    margin-bottom: 20px; 
+}
+        
+.info-dark p { 
+    font-size: 14px; 
+    line-height: 1.6; 
+    margin-bottom: 30px; 
+    opacity: 0.9; 
+}
+        
+.info-dark h4 { 
+    font-size: 12px; 
+    letter-spacing: 1px; 
+    color: #6c6cff; 
+    margin-top: 20px; 
+}
+        
+.info-dark a { 
+    color: white; 
+    text-decoration: none; 
+    font-size: 14px; 
+    display: block; 
+    margin-top: 5px; 
+}
+        
+.events-section { 
+    max-width: 1100px; 
+    margin: 40px auto 100px auto; 
+}
+        
+.events-section h2 { 
+    text-align: center; 
+    margin-bottom: 40px; 
+    color: #1e2147; 
+}
+        
+.event-item { 
+    background: white; 
+    padding: 20px 40px; 
+    margin-bottom: 10px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    border-left: 4px solid #6c6cff;
+}
+
+.event-details span { 
+    display: block; 
+    font-size: 12px; 
+    color: #999; 
+}
+        
+.event-details strong { 
+    font-size: 16px; 
+    color: #333; 
+}
+        
+.rsvp-btn { 
+    background: #5c5ce0; 
+    color: white; 
+    padding: 8px 20px; 
+    text-decoration: none; 
+    font-size: 12px; 
+}
+    
+.full-width-image-container {
+    width: 100%; 
+    margin: 0; 
+    overflow: hidden;
+}
+
+.full-width-image-container img {
+    width: 100%;
+    height: auto; 
+    max-height: 600px; 
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 900px) {
+    .full-width-image-container img {
+        height: 350px; 
+    }
+}
+
+footer { 
+    background:#1e2147; 
+    color:white; 
+    padding:60px 10%; 
+}
+        
+.footer-grid { 
+    display:grid; 
+    grid-template-columns:2fr 1fr 1fr 1fr; 
+    gap:40px; 
+}
+        
+footer a { 
+    color:#bbb; 
+    display:block; 
+    margin:8px 0; 
+    text-decoration:none; 
+}
+        
+.copy { 
+    text-align:center; 
+    margin-top:40px; 
+    font-size:13px; 
+    color:#aaa; 
+}
+
+@media(max-width:900px){
+    .admissions-container { 
+        grid-template-columns: 1fr; 
+    }
+    .info-white, .info-dark { 
+        padding: 40px; 
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Ridgeview Middle School</div>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="academics.html">Academics</a>
+        <a href="news.html">News</a>
+        <a href="events.html">Events</a>
+        <a href="students.html">Students</a>
+        <a href="parents.html">Parents</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="admissions-intro">
+    <h1>ADMISSIONS</h1>
+    <p>Our admissions process is designed to welcome students into a supportive and inspiring learning environment where they can grow academically and personally. We encourage families to explore our programs, meet our dedicated educators, and discover the opportunities available to every student. Through a transparent and friendly admission process, we aim to make every new student feel confident and excited about joining our school community.</p>
+</section>
+
+<div class="admissions-container">
+    <div class="info-white">
+        <h2>Open House Information</h2>
+        <p>Our Open House events provide families with the opportunity to experience our school community in a welcoming and engaging environment. Visitors can explore our classrooms, learning spaces, and facilities while gaining a better understanding of the academic programs and opportunities we offer.</p>
+        <p>During the visit, parents and prospective students can meet our dedicated teachers and staff, learn about our teaching approach, and discover the wide range of activities that support student development both inside and outside the classroom.</p>
+        <p>Open House is also a great opportunity to ask questions, connect with our school community, and see firsthand how we nurture curiosity, creativity, and confidence in every student.</p>
+    </div>
+    
+    <div class="info-dark">
+        <h2>Prospective<br>Parents & Students</h2>
+        <p>
+            Our school prospectus offers a comprehensive overview of our academic programs, values, facilities, and student opportunities.
+            <br><br>
+            It provides parents and students with important information about our curriculum, extracurricular activities, and the overall learning experience we offer. By reviewing the prospectus, families can gain a deeper understanding of our commitment to academic excellence and holistic student development.
+        </p>
+        
+        <h4>FOR MORE INFORMATION</h4>
+        
+        <h4>E-MAIL US</h4>
+        <a href="mailto:ridgeviewmiddleschool@gmail.com">ridgeviewmiddleschool@gmail.com</a>
+        
+        <h4>CALL OUR MAIN LINE</h4>
+        <a href="tel:123-456-7890">123-456-7890</a>
+    </div>
+</div>
+
+<section class="events-section">
+    <h2>Upcoming Admissions Events</h2>
+    
+    <div class="event-item">
+        <div class="event-details"><span>Mar 25, 2030</span><strong>Spring Open House</strong></div>
+        <a href="#" class="rsvp-btn">Register</a>
+    </div>
+    <div class="event-item">
+        <div class="event-details"><span>Apr 05, 2030</span><strong>Virtual Campus Tour</strong></div>
+        <a href="#" class="rsvp-btn">Register</a>
+    </div>
+    <div class="event-item">
+        <div class="event-details"><span>Apr 12, 2030</span><strong>Q&A with the Principal</strong></div>
+        <a href="#" class="rsvp-btn">Register</a>
+    </div>
+    <div class="event-item">
+        <div class="event-details"><span>May 02, 2030</span><strong>Early Enrollment Workshop</strong></div>
+        <a href="#" class="rsvp-btn">Register</a>
+    </div>
+    <div class="event-item">
+        <div class="event-details"><span>May 15, 2030</span><strong>Student Shadow Day</strong></div>
+        <a href="#" class="rsvp-btn">Register</a>
+    </div>
+    <div class="event-item">
+        <div class="event-details"><span>Jun 01, 2030</span><strong>Summer Orientation</strong></div>
+        <a href="#" class="rsvp-btn">Register</a>
+    </div>
+    <div class="event-item">
+        <div class="event-details"><span>Jun 10, 2030</span><strong>Financial Aid Webinar</strong></div>
+        <a href="#" class="rsvp-btn">Register</a>
+    </div>
+    <div class="event-item">
+        <div class="event-details"><span>Jun 22, 2030</span><strong>New Parent Breakfast</strong></div>
+        <a href="#" class="rsvp-btn">Register</a>
+    </div>
+    <div class="event-item">
+        <div class="event-details"><span>Jul 05, 2030</span><strong>Curriculum Overview Night</strong></div>
+        <a href="#" class="rsvp-btn">Register</a>
+    </div>
+    <div class="event-item">
+        <div class="event-details"><span>Jul 18, 2030</span><strong>Late Admission Interview Day</strong></div>
+        <a href="#" class="rsvp-btn">Register</a>
+    </div>
+</section>
+
+<div class="full-width-image-container">
+    <img src="https://images.unsplash.com/photo-1746937107789-895b1d2f5c3a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2Nob29sJTIwc3R1ZGVudHMlMjB3YWxraW5nJTIwb24lMjBjYW1wdXN8ZW58MHx8MHx8fDA%3D" alt="Students walking on campus">
+</div>
+
+<footer>
+<div class="footer-grid">
+<div>
+<h3>Ridgeview</h3>
+<p>Middle School</p>
+</div>
+<div>
+<h4>Quick Navigation</h4>
+<a href="about.html">About</a>
+<a href="academics.html">Academics</a>
+<a href="students.html">Students</a>
+<a href="parents.html">Parents</a>
+</div>
+<div>
+<h4>Stay Connected</h4>
+<a href="https://www.facebook.com/ridgeviewschool" target="_blank">Facebook</a>
+<a href="https://www.instagram.com/ridgeviewschool" target="_blank">Instagram</a>
+<a href="https://twitter.com/ridgeviewschool" target="_blank">Twitter</a>
+<a href="https://www.youtube.com/@ridgeviewschool" target="_blank">YouTube</a>
+</div>
+<div>
+<h4>Get in Touch</h4>
+<p>500 Terry Francine Street</p>
+<p>San Francisco, CA</p>
+<p>Tel: 123-456-7890</p>
+</div>
+</div>
+<div class="copy">
+© 2030 Ridgeview Middle School | Copyrights reserved
+</div>
+</footer>
+
+</body>
+</html>

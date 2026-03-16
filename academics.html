@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academics | Ridgeview School</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+        
+* { 
+    margin:0; 
+    padding:0; 
+    box-sizing:border-box; 
+    font-family:Poppins; 
+}
+        
+body { 
+    background:#f4f4f4; 
+    color:#333; 
+}
+        
+header { 
+    background:white; 
+    padding:15px 5%; 
+    display:flex; 
+    align-items:center; 
+    justify-content:space-between; 
+    border-bottom:1px solid #ddd; 
+}
+
+.logo { 
+    font-size:22px; 
+    font-weight:700; 
+}
+
+nav a { 
+    margin:0 12px; 
+    text-decoration:none; 
+    color:#333; 
+    font-weight:500; 
+}
+        
+nav a:hover { 
+    color:#5c5ce0; 
+}
+
+.academics-intro {
+    padding: 80px 10% 40px;
+    text-align: center;
+    background: white;
+}
+        
+.academics-intro h1 { 
+    font-size: 48px; 
+    font-weight: 700; 
+    margin-bottom: 20px; 
+    letter-spacing: 2px; 
+}
+
+.academics-intro p { 
+    max-width: 600px; 
+    margin: auto; 
+    color: #999; 
+    line-height: 1.6; 
+    font-size: 14px; 
+}
+
+.academics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    max-width: 100%;
+    background: white;
+}
+
+.grid-item {
+    height: 350px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-box { 
+    background: white; 
+}
+        
+.text-box.dark { 
+    background: #1e2147; 
+    color: white; 
+}        
+        
+.text-box h3 { 
+    font-size: 18px; 
+    margin-bottom: 15px; 
+    font-weight: 600; 
+}
+        
+.text-box p { 
+    font-size: 13px; 
+    line-height: 1.8; 
+    color: inherit; 
+    opacity: 0.8; 
+    margin-bottom: 20px; 
+}
+        
+.btn-more {
+    padding: 8px 20px;
+    border: none;
+    background: #5c5ce0;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-more:hover { 
+    background: #4a4abf; 
+}
+
+footer { 
+        background:#1e2147; 
+        color:white; 
+        padding:60px 10%; 
+    }
+        
+    .footer-grid { 
+        display:grid; 
+        grid-template-columns:2fr 1fr 1fr 1fr; 
+        gap:40px; 
+    }
+        
+    footer a { 
+        color:#bbb; 
+        display:block; 
+        margin:8px 0; 
+        text-decoration:none; 
+    }
+        
+    .copy { 
+        text-align:center; 
+        margin-top:40px; 
+        font-size:13px; 
+        color:#aaa; 
+    }
+
+@media(max-width:1200px){
+    
+    .academics-grid { 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media(max-width:768px){
+    
+    .academics-grid { 
+        grid-template-columns: 1fr; 
+    }
+    .grid-item { 
+        height: auto; 
+        padding: 60px 40px; 
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Ridgeview Middle School</div>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="academics.html">Academics</a>
+        <a href="news.html">News</a>
+        <a href="events.html">Events</a>
+        <a href="students.html">Students</a>
+        <a href="parents.html">Parents</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="academics-intro">
+    <h1>ACADEMICS</h1>
+    <p>At the heart of our school is a commitment to academic excellence. With a balanced curriculum and engaging teaching methods, we create an environment where students are encouraged to ask questions, think creatively, and develop a passion for learning. Our goal is to prepare students not only for examinations but also for future challenges and opportunities. </p>
+</section>
+
+<div class="academics-grid">
+    
+    <div class="grid-item text-box">
+        <h3>Social Studies</h3>
+        <p>Explore history, geography, and cultures that shape our world. <br>
+           Students develop awareness, critical thinking, and global understanding.</p>
+        <button class="btn-more">Learn More</button>
+    </div>
+    <div class="grid-item"><img src="https://images.unsplash.com/photo-1592252032050-34897f779223?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Social Studies"></div>
+    
+    <div class="grid-item text-box">
+        <h3>Science</h3>
+        <p>Discover the wonders of the natural world through curiosity and experimentation. <br>
+           Science inspires students to question, explore, and innovate.</p>
+        <button class="btn-more">Learn More</button>
+    </div>
+    <div class="grid-item"><img src="https://plus.unsplash.com/premium_photo-1681487118711-2c8e629d4313?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Science"></div>
+
+    <div class="grid-item"><img src="https://plus.unsplash.com/premium_photo-1676422355992-703feab0d80d?q=80&w=695&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Math"></div>
+    <div class="grid-item text-box dark">
+        <h3>Math</h3>
+        <p>Build strong logical thinking and problem-solving skills. <br>
+           Mathematics helps students understand patterns, numbers, and real-world applications.</p>
+        <button class="btn-more">Learn More</button>
+    </div>
+    
+    <div class="grid-item"><img src="https://images.unsplash.com/photo-1680984926707-ecef192287ac?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Literature"></div>
+    <div class="grid-item text-box dark">
+        <h3>Literature Arts</h3>
+        <p>Experience the power of words, stories, and creative expression. <br>
+           Students develop imagination, communication skills, and cultural appreciation.</p>
+        <button class="btn-more">Learn More</button>
+    </div>
+
+    <div class="grid-item text-box">
+        <h3>Art</h3>
+        <p>Unleash creativity through colors, shapes, and artistic expression. <br>
+           Art encourages imagination and helps students express their unique ideas.</p>
+        <button class="btn-more">Learn More</button>
+    </div>
+    <div class="grid-item"><img src="https://images.unsplash.com/photo-1579762715118-a6f1d4b934f1?q=80&w=684&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Art"></div>
+    
+    <div class="grid-item text-box">
+        <h3>Physical Education</h3>
+        <p>Promote fitness, teamwork, and a healthy lifestyle. <br>
+           Sports builds strength, discipline, and confidence in students.</p>
+        <button class="btn-more">Learn More</button>
+    </div>
+    <div class="grid-item"><img src="https://images.unsplash.com/photo-1665256452878-b2983482c50d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="PE"></div>
+
+</div>
+
+
+<footer>
+
+<div class="footer-grid">
+
+<div>
+<h3>Ridgeview</h3>
+<p>Middle School</p>
+</div>
+
+<div>
+<h4>Quick Navigation</h4>
+<a href="about.html">About</a>
+<a href="academics.html">Academics</a>
+<a href="students.html">Students</a>
+<a href="parents.html">Parents</a>
+</div>
+
+<div>
+<h4>Stay Connected</h4>
+<a href="https://www.facebook.com/ridgeviewschool" target="_blank">Facebook</a>
+<a href="https://www.instagram.com/ridgeviewschool" target="_blank">Instagram</a>
+<a href="https://twitter.com/ridgeviewschool" target="_blank">Twitter</a>
+<a href="https://www.youtube.com/@ridgeviewschool" target="_blank">YouTube</a>
+</div>
+
+<div>
+<h4>Get in Touch</h4>
+<p>500 Terry Francine Street</p>
+<p>San Francisco, CA</p>
+<p>Tel: 123-456-7890</p>
+</div>
+
+</div>
+
+<div class="copy">
+© 2030 Ridgeview Middle School | Copyrights reserved
+</div>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parents | Ridgeview School</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+    * { 
+        margin:0; 
+        padding:0; 
+        box-sizing:border-box; 
+        font-family:Poppins; 
+    }
+        
+    body { 
+        background:#f4f4f4; 
+        color:#333; 
+    }
+        
+    header { 
+        background:white; 
+        padding:15px 5%; 
+        display:flex; 
+        align-items:center; 
+        justify-content:space-between; 
+        border-bottom:1px solid #ddd; 
+    }
+        
+    .logo { 
+        font-size:22px; 
+        font-weight:700; 
+    }
+        
+    nav a { 
+        margin:0 12px; 
+        text-decoration:none; 
+        color:#333; 
+        font-weight:500; 
+    }
+        
+    nav a:hover { 
+        color:#5c5ce0; 
+    }
+
+    
+    .about-intro {
+        padding: 80px 10% 40px;
+        text-align: center;
+        background: white;
+    }
+        
+    .about-intro h1 { 
+        font-size: 48px; 
+        font-weight: 700; 
+        margin-bottom: 20px; 
+    }
+        
+    .about-intro p { 
+        max-width: 800px; 
+        margin: auto; color: #666; 
+        line-height: 1.6; 
+    }
+
+   
+    .grid-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background: white;
+        overflow: hidden;
+        max-width: 1100px; 
+        margin: 0 auto;
+    }
+    
+    .grid-img-container { 
+        width: 100%; 
+        height: 500px; 
+    } 
+        
+    .grid-img-container img { 
+        width: 100%; 
+        height: 150%; 
+        object-fit: cover; 
+    }
+        
+    .message-box {
+        background: #1e2147; 
+        color: white;
+        padding: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .message-box h2 {
+        color: #6c6cff; 
+        font-size: 24px; 
+        margin-bottom: 15px; 
+    }
+        
+    .message-box p { 
+        line-height: 1.8; 
+        font-weight: 300; 
+        font-size: 14px;
+        opacity: 0.9; 
+    }
+
+    .btn-download {
+    background-color: #5c5ce0; /* The purple-blue from your image */
+    color: white;
+    padding: 12px 30px; 
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block; /* Keeps it to the width of the text */
+    margin-top: 25px; /* Adds space between the text and the button */
+    transition: 0.3s ease;
+}
+
+.btn-download:hover {
+    background-color: #4a4abf; /* Slightly darker on hover */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+    
+    footer { 
+        background:#1e2147; 
+        color:white; 
+        padding:60px 10%; 
+    }
+        
+    .footer-grid { 
+        display:grid; 
+        grid-template-columns:2fr 1fr 1fr 1fr; 
+        gap:40px; 
+    }
+        
+    footer a { 
+        color:#bbb; 
+        display:block; 
+        margin:8px 0; 
+        text-decoration:none; 
+    }
+        
+    .copy { 
+        text-align:center; 
+        margin-top:40px; 
+        font-size:13px; 
+        color:#aaa; 
+    }
+
+    @media(max-width:900px){
+        .grid-section { 
+            grid-template-columns: 1fr; 
+            width: 90%; 
+        }
+            
+        .message-box { 
+            padding: 40px; 
+        }
+        
+        .grid-img-container { 
+            height: 350px; 
+        }
+        
+        .reverse-mobile { 
+            order: 2; 
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Ridgeview Middle School</div>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="academics.html">Academics</a>
+        <a href="news.html">News</a>
+        <a href="events.html">Events</a>
+        <a href="students.html">Students</a>
+        <a href="parents.html">Parents</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="about-intro">
+    <h1>FOR THE PARENTS</h1>
+    <p>Parents play an essential role in a child’s educational journey. Our school values strong communication and collaboration with families to support every student’s growth and success. We encourage parents to stay involved in school activities, maintain open communication with teachers, and actively participate in their child’s learning experience.</p>
+</section>
+
+<section class="grid-section">
+    <div class="message-box">
+        <h2>PTA Updates</h2>
+        <p>
+           Our Parent-Teacher Association works closely with the school to strengthen the partnership between families and educators. Through meetings, events, and collaborative initiatives, the PTA helps create a supportive and engaging environment that benefits all students.
+           <br><br><br><br>
+           The PTA regularly organizes programs, workshops, and school events that encourage parent participation and student development.
+           <br><br>
+           Parents are encouraged to attend PTA meetings to stay informed about school activities, upcoming events, and important announcements.
+           <br><br>
+           These meetings also provide an opportunity for parents to share suggestions, discuss ideas, and contribute to the continuous improvement of the school community.
+           <br><br>
+           Together, the school and the PTA work to create meaningful experiences that support both academic excellence and student well-being. 
+        </p>
+    </div>
+    <div class="grid-img-container">
+        <img src="https://static.wixstatic.com/media/11062b_2c2966db42004be499668dff9cb6bd5f~mv2.jpg/v1/fill/w_640,h_748,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_2c2966db42004be499668dff9cb6bd5f~mv2.jpg">
+    </div>
+</section>
+
+<section class="grid-section">
+    <div class="grid-img-container">
+        <img src="https://images.unsplash.com/photo-1748609422318-7301636fb625?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    </div>
+    <div class="message-box reverse-mobile">
+        <h2>Supply List</h2>
+        <p>
+            Our school provides a carefully prepared supply list to ensure students are fully equipped for a productive and organized academic year. Having the right materials helps students stay prepared and actively participate in classroom learning.
+            <br><br><br><br>
+            The supply list includes essential items such as notebooks, textbooks, writing materials, and other tools required for daily lessons and activities.
+            <br><br>
+            Parents are encouraged to review the list at the beginning of the academic year to ensure students have all the necessary supplies for their classes.
+            <br><br>
+            Being well-prepared with the required materials helps students stay focused, organized, and confident in their learning environment.
+            <br><br>
+            The school may also update the supply list periodically to include materials needed for new subjects, projects, or special activities throughout the year.  
+
+            <a href="#" class="btn-download">Download Supply List</a>
+    </div>
+</section>
+
+<footer>
+<div class="footer-grid">
+<div>
+<h3>Ridgeview</h3>
+<p>Middle School</p>
+</div>
+<div>
+<h4>Quick Navigation</h4>
+<a href="about.html">About</a>
+<a href="academics.html">Academics</a>
+<a href="students.html">Students</a>
+<a href="parents.html">Parents</a>
+</div>
+<div>
+<h4>Stay Connected</h4>
+<a href="https://www.facebook.com/ridgeviewschool" target="_blank">Facebook</a>
+<a href="https://www.instagram.com/ridgeviewschool" target="_blank">Instagram</a>
+<a href="https://twitter.com/ridgeviewschool" target="_blank">Twitter</a>
+<a href="https://www.youtube.com/@ridgeviewschool" target="_blank">YouTube</a>
+</div>
+<div>
+<h4>Get in Touch</h4>
+<p>500 Terry Francine Street</p>
+<p>San Francisco, CA</p>
+<p>Tel: 123-456-7890</p>
+</div>
+</div>
+<div class="copy">
+© 2030 Ridgeview Middle School | Copyrights reserved
+</div>
+</footer>
+
+</body>
+</html>

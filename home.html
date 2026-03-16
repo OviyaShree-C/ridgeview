@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ridgeview Middle School</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
+}
+
+body{
+background:#f4f4f4;
+color:#333;
+}
+
+header{
+background:white;
+padding:15px 5%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+border-bottom:1px solid #ddd;
+}
+
+.logo{
+font-size:22px;
+font-weight:700;
+}
+
+nav a{
+margin:0 12px;
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+nav a:hover{
+color:#5c5ce0;
+}
+
+.hero{
+height:600px;
+background:url("https://images.unsplash.com/photo-1523240795612-9a054b0db644") center/cover no-repeat;
+display:flex;
+align-items:center;
+padding-left:10%;
+}
+
+.hero-box{
+background:#5c5ce0;
+padding:50px;
+color:white;
+width:420px;
+}
+
+.hero-box h1{
+font-size:45px;
+margin-bottom:10px;
+}
+
+.hero-box p{
+font-size:20px;
+margin-bottom:20px;
+}
+
+.btn{
+background:#111;
+color:white;
+padding:12px 20px;
+text-decoration:none;
+display:inline-block;
+}
+
+.section{
+padding:80px 10%;
+text-align:center;
+background:white;
+}
+
+.section h2{
+font-size:36px;
+margin-bottom:10px;
+}
+
+.section p{
+max-width:700px;
+margin:auto;
+color:#666;
+}
+
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+}
+
+.grid img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.grid-text{
+background:#1e2147;
+color:white;
+padding:80px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+.grid-text h3{
+font-size:30px;
+margin-bottom:15px;
+}
+
+.grid-text p{
+margin-bottom:20px;
+line-height:1.6;
+}
+
+.grid-text button{
+background:#6c6cff;
+border:none;
+padding:12px 20px;
+color:white;
+cursor:pointer;
+}
+
+.news {
+    padding: 80px 10%;
+    text-align: center;
+    background: linear-gradient(to bottom, white 50%, #5c5ce0 50%);
+}
+
+.news h2 {
+    font-size: 42px;
+    margin-bottom: 60px;
+    color: #1e2147;
+    font-weight: 700;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.news-card {
+    position: relative;
+    height: 380px; 
+    overflow: hidden;
+    text-align: left;
+    color: white;
+}
+
+.news-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.news-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 100%);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news-meta {
+    font-size: 11px;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+.news-card h4 {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.news-footer {
+    border-top: 1px solid rgba(255,255,255,0.4);
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.read-btn {
+    background: #1e2147;
+    color: white;
+    padding: 14px 40px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.read-btn:hover {
+    background: #111;
+}
+
+.life{
+background:#5c5ce0;
+padding:80px 10%;
+color:white;
+text-align:center;
+}
+
+.life h2{
+font-size:32px;
+margin-bottom:10px;
+}
+
+.life-grid{
+display:grid;
+grid-template-columns:repeat(6,1fr);
+gap:10px;
+margin-top:30px;
+}
+
+.life-grid img{
+width:100%;
+height:150px;
+object-fit:cover;
+}
+
+.newsletter{
+padding:70px 10%;
+background:#eee;
+text-align:center;
+}
+
+.newsletter h2{
+font-size:30px;
+margin-bottom:10px;
+}
+
+.newsletter input{
+width:60%;
+padding:12px;
+border:1px solid #aaa;
+margin-top:20px;
+}
+
+.newsletter button{
+padding:12px 25px;
+background:#222;
+color:white;
+border:none;
+margin-left:10px;
+}
+
+footer{
+background:#1e2147;
+color:white;
+padding:60px 10%;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:2fr 1fr 1fr 1fr;
+gap:40px;
+}
+
+footer a{
+color:#bbb;
+display:block;
+margin:8px 0;
+text-decoration:none;
+}
+
+footer a:hover{
+color:white;
+}
+
+.copy{
+text-align:center;
+margin-top:40px;
+font-size:13px;
+color:#aaa;
+}
+
+@media(max-width:900px){
+
+.hero{
+height:auto;
+padding:80px 10%;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.news-grid{
+grid-template-columns:1fr;
+}
+
+.life-grid{
+grid-template-columns:repeat(3,1fr);
+}
+
+.footer-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+
+<header>
+<div class="logo">Ridgeview Middle School</div>
+<nav>
+<a href="home.html">Home</a>
+<a href="about.html">About</a>
+<a href="academics.html">Academics</a>
+<a href="news.html">News</a>
+<a href="events.html">Events</a>
+<a href="students.html">Students</a>
+<a href="parents.html">Parents</a>
+<a href="admissions.html">Admissions</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<div class="hero-box">
+<h1>Back to School</h1>
+<p>Welcome to the Future of Learning</p>
+<a href="#" class="read-btn">Discover More</a>
+</div>
+</section>
+
+<section class="section">
+<h2>SAFETY MEASURES IN PLACE</h2>
+<p>
+We do everything to ensure the health, safety and well-being of our students and teachers.
+Additional information can be found here.
+</p>
+<a href="#" class="read-btn">Safety Measures</a>
+</section>
+
+<section class="grid">
+<img src="https://images.unsplash.com/photo-1588072432836-e10032774350">
+<div class="grid-text">
+<h3>Student Life</h3>
+<p>
+Learn. Share. Grow. <br> A space where students connect, collaborate, and grow together.Share your skills, learn from peers and explore new opportunities to build your future.
+</p>
+<button>Student Information</button>
+</div>
+
+<div class="grid-text">
+<h3>Open Enrollment</h3>
+<p>
+Your child’s first step toward a future filled with learning, curiosity, and discovery. Our school creates an environment where students are encouraged to explore their talents, build confidence, and develop a lifelong love for knowledge. Join our community and become part of a place where every student’s journey matters.
+</p>
+<button>Apply Now</button>
+</div>
+<img src="https://images.unsplash.com/photo-1577896851231-70ef18881754">
+</section>
+
+<section class="news">
+    <h2>LATEST NEWS</h2>
+
+    <div class="news-grid">
+        <div class="news-card">
+            <img src="https://images.unsplash.com/photo-1584697964358-3e14ca57658b">
+            <div class="news-overlay">
+                <div class="news-meta">Mar 22, 2029 · 1 min read</div>
+                <div>
+                    <h4>Learning at Home Effectively</h4>
+                    <div class="news-footer">
+                        <span>👁️ 2976</span>
+                        <span>3012 ❤️</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="news-card">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
+            <div class="news-overlay">
+                <div class="news-meta">June 02, 2020 · 5 min read</div>
+                <div>
+                    <h4>Get to Know Your Teachers</h4>
+                    <div class="news-footer">
+                        <span>👁️ 13,012</span>
+                        <span>11,753 ❤️</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="news-card">
+            <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc">
+            <div class="news-overlay">
+                <div class="news-meta">June 24, 2020 · 2 min read</div>
+                <div>
+                    <h4>The New Safety Regulations</h4>
+                    <div class="news-footer">
+                        <span>👁️ 10,987</span>
+                        <span>10,154 ❤️</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <a href="#" class="read-btn">Read All News</a>
+</section>
+
+<section class="life">
+
+<h2>LIFE & CULTURE</h2>
+
+<p>Follow #ridgeviewmiddleschool on Instagram</p>
+
+<div class="life-grid">
+
+<img src="https://plus.unsplash.com/premium_photo-1682787494977-d013bb5a8773?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+<img src="https://images.unsplash.com/photo-1617721926586-4eecce739745?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+<img src="https://plus.unsplash.com/premium_photo-1713102867032-9f7ddbbca7da?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJpemUlMjB3aW5uZXJ8ZW58MHx8MHx8fDA%3D">
+<img src="https://images.unsplash.com/photo-1616512659455-111d3367649f?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2Nob29sJTIwYnVpbGRpbmd8ZW58MHx8MHx8fDA%3D">
+<img src="https://plus.unsplash.com/premium_photo-1690479511912-f438c15c1b41?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+<img src="https://images.unsplash.com/photo-1758685848437-6c4346d15af2?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+
+<img src="https://plus.unsplash.com/premium_photo-1677567996070-68fa4181775a?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+<img src="https://plus.unsplash.com/premium_photo-1664297510120-354f5adbb9eb?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29tcGV0aXRpb258ZW58MHx8MHx8fDA%3D">
+<img src="https://images.unsplash.com/photo-1599725427295-6ed79ff8dbef?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c2Nob29sJTIwYnVpbGRpbmd8ZW58MHx8MHx8fDA%3D">
+<img src="https://plus.unsplash.com/premium_photo-1681505336207-cea25b6cf0ea?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2Nob29sJTIwYnVpbGRpbmd8ZW58MHx8MHx8fDA%3D">
+<img src="https://images.unsplash.com/photo-1655337690446-e10ecbe6541c?q=80&w=1165&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+<img src="https://plus.unsplash.com/premium_photo-1683147707084-4025311db3f2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+
+</div>
+
+</section>
+
+<section class="newsletter">
+
+<h2>SIGN UP FOR CAMPUS EXPOSURE</h2>
+
+<p>Stay up-to-date with the latest news</p>
+
+<input type="email" placeholder="Enter your email here">
+<button>Subscribe</button>
+
+</section>
+
+<footer>
+
+<div class="footer-grid">
+
+<div>
+<h3>Ridgeview</h3>
+<p>Middle School</p>
+</div>
+
+<div>
+<h4>Quick Navigation</h4>
+<a href="about.html">About</a>
+<a href="academics.html">Academics</a>
+<a href="students.html">Students</a>
+<a href="parents.html">Parents</a>
+</div>
+
+<div>
+<h4>Stay Connected</h4>
+<a href="https://www.facebook.com/ridgeviewschool" target="_blank">Facebook</a>
+<a href="https://www.instagram.com/ridgeviewschool" target="_blank">Instagram</a>
+<a href="https://twitter.com/ridgeviewschool" target="_blank">Twitter</a>
+<a href="https://www.youtube.com/@ridgeviewschool" target="_blank">YouTube</a>
+</div>
+
+<div>
+<h4>Get in Touch</h4>
+<p>500 Terry Francine Street</p>
+<p>San Francisco, CA</p>
+<p>Tel: 123-456-7890</p>
+</div>
+
+</div>
+
+<div class="copy">
+© 2030 Ridgeview Middle School | Copyrights reserved
+</div>
+
+</footer>
+
+</body>
+</html>
